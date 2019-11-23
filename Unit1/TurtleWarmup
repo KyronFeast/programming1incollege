@@ -1,0 +1,129 @@
+showturtle
+
+;move to bottom of the stem
+right 180
+move 100
+left 180
+remember
+
+;draw stem
+color blue
+thick 3
+draw 150
+
+goback
+move 50
+remember
+
+;Draw Right Pedel
+right 45
+color 8
+draw 35
+
+goback
+move 30
+remember
+
+;draw right pedel
+left 45
+color 6
+draw 35
+
+goback
+move 70
+remember
+
+;move to bottom corner
+right 180
+move 170
+left 90
+move 100
+
+;Initials
+thick 1
+color black
+turtleprint T.J.S
+goback
+
+
+remember
+
+move 40
+right 90
+move -25
+color blue
+transparent 50
+right 90
+  let x 1
+  repeat 30
+    draw 40
+    left 75-x
+    let x x+1
+next
+
+goback
+remember
+
+move 40
+right 90
+move -25
+transparent 50
+color cyan
+right 90
+  let x 1
+  repeat 30
+    draw 40
+    left 75-x
+    let x x+1
+next
+goback
+remember
+move 25
+right 90
+
+color yellow
+thick 2
+repeat 100
+draw 5
+right 45
+draw 5
+next
+goback
+remember
+move 5
+move 25
+right 90
+
+color yellow
+thick 2
+repeat 100
+draw 5
+
+right 45
+draw 5
+next
+goback
+remember
+move 50
+remember
+;sun
+right 90
+move 100
+repeat 10
+draw 40
+left 160
+draw 40
+next
+goback
+
+right 180
+move 15
+right 90
+move 2
+repeat 100
+color green
+draw 70
+left 160
+draw 70
+next
+left 90

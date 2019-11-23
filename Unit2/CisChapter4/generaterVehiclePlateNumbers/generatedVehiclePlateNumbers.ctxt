@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=generatedVehiclePlateNumbers
+comment0.text=\r\n\ This\ program\ generates\ three\ random\ letters\ followed\ by\ 4\ random\ numbers\r\n\ resulting\ in\ a\ vehicle\ licence\ plate\ number.\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\r\n\ Chapter4\ P.E.\#4.2.5\ \ pg.154\r\n\ Version1\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=BinarySearch
+comment1.params=list\ key
+comment1.target=int\ binarySearch(int[],\ int)
+comment1.text=Create\ a\ method\ of\ integer\ datatype\ that\ accepts\ the\r\nparameters\ \ integer\ array\ and\ int\ key
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ProgReport
+comment0.text=\ Write\ a\ description\ of\ class\ ProgReport\ here.\ *\ \r\n\ @author\ (CIS260)\ \r\n@version\ (20191023)
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=int\ getScore()
+comment3.params=num
+comment3.target=java.lang.String\ determineGrade(int)
+comment4.params=s
+comment4.target=java.lang.String\ getStatusMsg(java.lang.String)
+numComments=5

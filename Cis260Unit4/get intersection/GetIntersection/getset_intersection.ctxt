@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=getset_intersection
+comment0.text=\r\n\ TestIntersection\ -\ Sample\ code\ for\ the\ "Get\ Set"\ project\r\n\ \r\n\ @author\ (Mr.\ Collard\ +\ Thomas\ J.\ Short)\ \r\n\ @version\ (FA2018)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=int[]\ getUserSet()
+comment3.params=listA\ listB
+comment3.target=void\ printIntersection(int[],\ int[])
+comment3.text=\r\n\ printIntersection\ -\ YOU\ write\ it\r\n\ \r\n\ @param\ \ listA,\ listB\ \ -\ 2\ sets\ (arrays)\ of\ integers\r\n
+comment4.params=listA\ listB
+comment4.target=int[]\ Intersection(int[],\ int[])
+numComments=5

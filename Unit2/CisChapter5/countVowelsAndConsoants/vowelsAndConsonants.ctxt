@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=vowelsAndConsonants
+comment0.text=\r\n\ This\ is\ a\ program\ that\ lets\ users\ enter\ a\ sentence\ A.k.a(string)\ and\ displays\r\n\ the\ number\ of\ consonants\ and\ vowels\ the\ string\ contains\ within\ it.\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\r\n\ 10/13/2019\r\n\ Count\ Vowels\ and\ Consonants\r\n\ Chapter\ 5\ \ pg.117\ \ \r\n\ Programming\ Exercise\ 5.49\ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

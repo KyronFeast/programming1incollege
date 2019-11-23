@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\thoma\OneDrive - St. Clair County Community College\Semester3\programming1\java\.metadata\.plugins\org.eclipse.jdt.core
+2288725620.index
+1860891807.index

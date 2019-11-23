@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=IndexOfSmallestElement
+comment0.text=\r\n\ This\ program\ lets\ the\ user\ enter\ 10\ numbers\ and\ finds\ the\r\n\ index\ of\ the\ smallest\ number\ and\ display\ it\r\n\ @author\ (Thomas\ J.\ Short)\r\n\ @version\ (11/03/2019)\r\n\ Cis\ 260\r\n\ Chapter\ 7\ pg.\ 280\r\n\ Programming\ Exersice\ 7.10\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=array
+comment2.target=int\ IndexOfSmallestElement(double[])
+numComments=3

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Matrix0s1s
+comment0.text=This\ program\ allows\ the\ user\ to\ enter\ a\ number\ and\ prints\r\n\ a\ matrix\ of\ 1's\ and\ 0'2\ based\ on\ that\ number.\ It\ does\ \r\n\ this\ by\ getting\ input,\ then\ caling\ a\ print\ module\ which\ then\ \r\n\ calls\ another\ integer\ module\ \r\n\ function\r\n\ \ Thomas\ J,\ Short\r\n\ \ Cis\ 260-01\r\n\ \ Chapter\ 6\ P.E.\ 6.17\ \r\n\ \ pg.\ 6.17\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=numberOfLines
+comment2.target=void\ printMatrix(int)
+comment3.params=lowerBound\ upperBound
+comment3.target=int\ intRandom(int,\ int)
+comment3.text=printMax\ invoke\ intRandom\ \r\nThis\ module\ returns\ a\ randomly\ generated\ number\ either\ 0\ or\ 1
+numComments=4

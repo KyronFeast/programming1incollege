@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=SimpleCircle
+comment1.params=
+comment1.target=SimpleCircle()
+comment1.text=Construct\ a\ circle\ with\ radius\ 1
+comment2.params=newRadius
+comment2.target=SimpleCircle(double)
+comment2.text=Construct\ a\ circle\ with\ a\ specified\ radius
+comment3.params=
+comment3.target=double\ getArea()
+comment3.text=Return\ the\ area\ of\ this\ circle
+comment4.params=
+comment4.target=double\ getPerimeter()
+comment4.text=Return\ the\ perimeter\ of\ this\ circle
+comment5.params=newRadius
+comment5.target=void\ setRadius(double)
+comment5.text=Set\ a\ new\ radius\ for\ this\ circle
+numComments=6

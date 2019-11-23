@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=AssignGrades
+comment0.text=\r\n\ This\ program\ allows\ the\ user\ to\ enter\ the\ number\ of\ students\r\n\ then\ prompts\ the\ user\ to\ enter\ all\ of\ the\ scores.\ \r\n\ displays\ grades\ based\ on\ the\ best\ scores\r\n\ @author\ (Thomas\ J.\ Short)\r\n\ @version\ (11/04/2019)\r\n\ Chapter\ 7\ pg.278\r\n\ Cis\ 260\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

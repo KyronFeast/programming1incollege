@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PrintDistinctNumbers
+comment0.text=This\ program\ allows\ a\ user\ to\ enter\ 10\ numbers\ and\ prints\ \r\n\ only\ the\ numbers\ that\ show\ up\ once\ in\ the\ list.\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260\ \r\n\ 11/03/2019\r\n\ Chapter\ 7\ pg.\ 279\ \r\n\ Programming\ Exersice\ **7.5\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=displayPryamid
+comment0.text=This\ program\ allows\ the\ user\ to\ enter\ a\ number\ 1\ through\ 15\ and\ then\r\n\ displays\ a\ pryamid\ based\ on\ the\ number\ that\ was\ entered.\r\n\ Thomas\ J.\ Short\ \ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

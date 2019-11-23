@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=computeFutureTuition
+comment0.text=\r\n\ Future\ Tuition\r\nThis\ program\ computes\ tuition\ for\ ten\ years\ with\ a\ .05\ percent\ \r\nincrease\ each\ year.\ also\ after\ ten\ years\ it\ calculates\ 4\ years\r\nof\ tuition\r\nThomas\ J.\ Short\r\nCis\ 260-01\r\n10/13/2019\r\nChapter\ 5\ pg.195\r\nProgramming\ Exercise\ 5.7\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

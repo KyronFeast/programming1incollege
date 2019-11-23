@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PalidromicPrime
+comment0.text=\r\n\ This\ program\ takes\ some\ pieces\ from\ the\ previous\ programs\ and\ prints\ \r\n\ the\ first\ 100\ primes\ that\ are\ also\ palindromes\r\n\ it\ prints\ ten\ numbers\ per\ seperated\ by\ exactly\ one\ space\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\r\n\ 10/23/2019\r\n\ Chapter\ 6\ Methods\ pg.\ 242\r\n\ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=number
+comment2.target=boolean\ isPrime(int)
+comment3.params=number
+comment3.target=int\ reverse(int)
+comment4.params=number
+comment4.target=boolean\ isPalindrome(int)
+numComments=5

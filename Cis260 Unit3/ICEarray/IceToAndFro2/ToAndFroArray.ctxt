@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ToAndFroArray
+comment0.text=\r\n\ Read\ in\ 5\ numbers\r\n\ Cis\ 260\ -01\r\n\ @author\ (Thomas\ J.\ Short)\r\n\ @version\ (V1)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=userlist
+comment2.target=int[]\ readInput(int)
+comment3.params=values
+comment3.target=void\ printArray(int[])
+comment4.params=values
+comment4.target=void\ printReverseArray(int[])
+numComments=5

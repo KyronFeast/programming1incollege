@@ -1,0 +1,64 @@
+import java.util.Scanner;
+/* TestIntersection - Sample code for the "Get Set" project *  
+   * @author (Mr. Collard + your name)  
+   * @version (FA2018) */
+   public class getset_intersection
+   {  
+      public static void main(String[] args)  
+      {        
+         
+         
+         
+         int[] setA = getUserSet();        
+         int[] setB = getUserSet();     
+         int[] printList = printIntersection( setA, setB );      
+         System.out.println("done testing");  
+      } 
+       /* get user set     *      */  
+       static int[] getUserSet()   
+      {      
+         Scanner input = new Scanner(System.in);
+         System.out.print("Enter" + "numbers: ");
+         
+         int[] userinput = new int [5];
+         for(int list1 = 0; list1 < userinput.length; list1++)
+         {
+             userinput[list1] = input.nextInt();
+         }
+         return userinput;
+        
+         /*int[] primes = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31 }; */  
+         /*return primes; */   
+      }    
+      /**     * printIntersection - YOU write it     *  
+      * @param  listA, listB  - 2 sets (arrays) of integers     */  
+     
+      static int[] printIntersection( int listA[], int listB[] )   
+      {  // put your code here
+           
+       int answerList[]  = new int[Math.min(listA.length, listB.length)];
+       int answerIndex = 0;
+       for(int i = 0; i < listA.length; i++)
+       {
+           int checkNum = listA[i]; 
+           for(int j = 0; j < listB.length; j++)
+           {
+             if(listB[j] == checkNum)
+             {
+                answerList[answerIndex] = checkNum;
+                answerIndex++;
+             }
+           }
+           
+       }
+        return answerList;
+      }
+      public static void printList(int[] list)
+      {
+         for (int counter = 0; counter < list.length; counter++ )
+         {
+            System.out.print(list[counter]);   
+         }
+      }
+  }
+    

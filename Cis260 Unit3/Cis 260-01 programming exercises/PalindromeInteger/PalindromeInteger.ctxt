@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=PalindromeInteger
+comment0.text=\ This\ program\ allows\ the\ user\ to\ enter\ an\ integer\ and\ then\ return\ the\ \r\n\ reversal\ of\ the\ integer\ entered\ or\ you\ may\ enter\ a\ number\ to\ find\ out\ if\ it\ \r\n\ is\ a\ palindrome\ or\ not.\ \r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\r\n\ 10/22/2019\r\n\ pg.\ 236\ P.E.\ 6.3\ \r\n
+comment1.params=number
+comment1.target=int\ reverse(int)
+comment2.params=number
+comment2.target=boolean\ isPalindrome(int)
+numComments=3

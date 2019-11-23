@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=StopWatch
+comment0.text=Stopwatch\r\n\ Thomas\ J.\ Short\r\n\ 11/20/2019\r\n\ CIS\ 260\r\n
+comment1.params=
+comment1.target=StopWatch()
+comment2.params=
+comment2.target=long\ getStartTime()
+comment3.params=
+comment3.target=long\ getEndTime()
+comment4.params=
+comment4.target=void\ start()
+comment5.params=
+comment5.target=void\ stop()
+comment6.params=
+comment6.target=long\ getElapsedTime()
+numComments=7

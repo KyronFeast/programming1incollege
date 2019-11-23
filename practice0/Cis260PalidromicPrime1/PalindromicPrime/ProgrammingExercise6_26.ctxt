@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ProgrammingExercise6_26
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=number
+comment2.target=boolean\ isPrime(int)
+comment2.text=Check\ whether\ number\ is\ prime
+comment3.params=number
+comment3.target=int\ reverse(int)
+comment4.params=number
+comment4.target=boolean\ isPalindrome(int)
+numComments=5

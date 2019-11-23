@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=areaOfaHexagon
+comment0.text=\r\n\ This\ program\ allows\ the\ user\ to\ enter\ one\ side\ of\ a\ hexagon\ then\r\n\ computes\ the\ area\ of\ the\ hexagon,\ after\ rounding\ to\ show\ only\r\n\ two\ decimal\ places\ the\ program\ displays\ the\ result\ back\ to\ the\ user.\r\n\r\n\ Thomas\ J.\ Short\ \r\n\ Area\ Of\ A\ Hexagon\ Version1\r\n\ Chapter4\ \ P.E.\ \#4.4\ pg.151\r\n\ Cis\ 260-01\r\n\ 10/04/2019\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

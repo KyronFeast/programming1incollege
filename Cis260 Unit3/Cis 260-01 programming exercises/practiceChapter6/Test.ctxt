@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Test
+comment0.text=public\ class\ Test\ {\r\n\ \ public\ static\ void\ main(String[]\ args)\ {\r\n\ \ \ \ //\ Initialize\ times\r\n\ \ \ \ int\ times\ \=\ 3;\r\n\ \ \ \ System.out.println("Before\ the\ call,"\r\n\ \ \ \ \ \ +\ "\ variable\ times\ is\ "\ +\ times);\r\n\ \ \r\n\ \ \ \ //\ Invoke\ nPrintln\ and\ display\ times\ \r\n\ \ \ \ nPrintln("Welcome\ to\ Java\!",\ times);\r\n\ \ \ \ System.out.println("After\ the\ call,"\ \r\n\ \ \ \ \ \ +\ "\ variable\ times\ is\ "\ +\ times);\r\n\ \ }\r\n\r\n\ \ //\ Print\ the\ message\ n\ times\r\n\ \ public\ static\ void\ nPrintln(\r\n\ \ \ \ \ \ String\ message,\ int\ n)\ {\r\n\ \ \ \ while\ (n\ >\ 0)\ {\r\n\ \ \ \ \ \ System.out.println("n\ \=\ "\ +\ n);\r\n\ \ \ \ \ \ System.out.println(message);\r\n\ \ \ \ \ \ n--;\r\n\ \ \ \ }\r\n\ \ }\r\n}
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=i
+comment2.target=void\ method1(int)
+numComments=3

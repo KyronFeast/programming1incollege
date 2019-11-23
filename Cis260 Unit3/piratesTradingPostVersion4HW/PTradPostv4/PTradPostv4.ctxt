@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=PTradPostv4
+comment0.text=\ in\ this\ version\ we\ modulize\ pirate\ 3\r\n\ @author\ (Mr.\ Collard\ and\ your\ Thomas\ J.\ Short)\ \r\n@version\ (2017Fall)
+comment1.params=Args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ displayUserInstructions()
+comment3.params=
+comment3.target=int\ getShoppingList()
+comment4.params=
+comment4.target=int\ getDoubloons()
+comment5.params=purchaseAmount\ amountTendered
+comment5.target=void\ calcChange(int,\ int)
+numComments=6

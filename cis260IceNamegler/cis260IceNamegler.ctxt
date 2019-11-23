@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=cis260IceNamegler
+comment0.text=\r\n\ This\ program\ let's\ the\ user\ input\ their\ full\ name\ seperated\ by\ spaces\r\n\ Then\ it\ display's\ their\ name\ in\ phonebook\ format\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\ \r\n\ NameGler\ ICE\r\n\ 10/07/2019\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

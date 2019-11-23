@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Rectangle
+comment0.text=This\ is\ the\ blueprint\ program\ for\ creating\ a\ rectangle\r\n\ Thomas\ J.\ Short\r\n\ 11/20/2019\r\n\ CIS\ 260\r\n\ page.\ 362\ P.E\ 9.1\r\n
+comment1.params=
+comment1.target=Rectangle()
+comment2.params=width\ height
+comment2.target=Rectangle(double,\ double)
+comment3.params=
+comment3.target=double\ getArea()
+comment3.text=return\ area\ of\ this\ rectangle
+comment4.params=
+comment4.target=double\ getPerimeter()
+comment4.text=return\ perimeter\ of\ this\ rectangle
+numComments=5

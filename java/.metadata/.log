@@ -1,0 +1,352 @@
+!SESSION 2019-09-24 21:42:30.564 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=11.0.4
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-24 21:44:20.882
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-24 21:44:26.060
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\thoma'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-09-24 21:45:55.013
+!MESSAGE Exception occurred during problem detection:
+----------------------------------- SOURCE BEGIN -------------------------------------
+import java.util.Scanner;
+/*Thomas J. Short
+ * Cis260-01
+ * 09/24/2019
+ * 
+   */ 
+public class daysInMonth 
+{
+  public static void main(String[] args)
+  {
+    //Create scanner object
+    Scanner input = new Scanner(System.in);
+  
+    //Prompt the user to enter the month using an integer
+    System.out.print("Enter the month: e.g. 1.2.3 ");
+    int month = input.nextInt();
+  
+    //Prompt the user to enter the year using an integer
+    System.out.print("Enter the year:  e.g. 1.2.3...");
+    int year = input.nextInt();
+  
+    //There are 31 day in most months
+    int days = 31;
+   
+ 
+    
+    switch (month) {
+    case 2:
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    days = 29;
+    break;
+    }
+    days = 28;
+    break;
+ 
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+    days = 30;
+  
+    }
+ 
+    switch (month) {
+    case 1:
+    System.out.println("January " + year + " has " + days + " days." ); break;
+    case 2:
+    System.out.println("Febuary " + year + " has " + days + " days." ); break;
+    case 3:
+    System.out.println("March " + year + " has " + days + " days." ); break;
+    case 4:
+    System.out.println("April " + year + " has " + days + " days." );break;
+    case 5:
+    System.out.println("May " + year + " has " + days + " days." ); break;
+    case 6:
+    System.out.println("June " + year + " has " + days + " days." ); break;
+    case 7:
+    System.out.println("July " + year + " has " + days + " days." ); break;
+    case 8:
+    System.out.println("Augest " + year + " has " + days + " days." ); break;
+    case 9:
+    System.out.println("September " + year + " has " + days + " days." ); break;
+    case 10:
+    System.out.println("October " + year + " has " + days + " days." ); break;
+    case 11:
+    System.out.println("November " + year + " has " + days + " days." ); break;
+    case 12:
+    System.out.println("December " + year + " has " + days + " days." ); break;
+    default:
+    days = 0;
+    System.out.print(" the month entered is incorrect! "); break;
+    }
+   } 
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2019-09-24 21:45:55.018
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 1
+Java Model Exception: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:324)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+Caused by: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	... 19 more
+Caused by: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2019-09-24 21:45:55.019
+!MESSAGE class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2019-09-24 21:45:55.019
+!MESSAGE class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2019-09-24 21:45:55.024
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:324)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+Caused by: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	... 19 more
+Caused by: java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2019-09-24 21:45:55.024
+!MESSAGE class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.jdt.internal.core.SourceTypeElementInfo cannot be cast to class org.eclipse.jdt.internal.compiler.env.IModule (org.eclipse.jdt.internal.core.SourceTypeElementInfo and org.eclipse.jdt.internal.compiler.env.IModule are in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @618b9e0c)
+	at org.eclipse.jdt.internal.core.AbstractModule.getModuleInfo(AbstractModule.java:83)
+	at org.eclipse.jdt.internal.core.NameLookup.getModuleDescriptionInfo(NameLookup.java:867)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.getModule(SearchableEnvironment.java:1085)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getModule(LookupEnvironment.java:213)
+	at org.eclipse.jdt.internal.compiler.env.ICompilationUnit.module(ICompilationUnit.java:64)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.module(CompilationUnitDeclaration.java:833)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1039)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:272)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:268)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:596)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1145)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:802)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1322)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:92)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)

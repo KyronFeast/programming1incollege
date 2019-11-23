@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=compareCost
+comment0.text=\r\n\ Compare\ Cost\r\n\ this\ is\ a\ program\ that\ uses\ a\ formula\ to\ decide\ which\ package\ is\ a\ \r\n\ better\ deal\ based\ on\ the\ weight\ and\ the\ price\ of\ two\ packages\r\n\ Thomas\ J.\ Short\r\n\ 09/25/2019\r\n\ Version1\r\n\ Chapter\ 3\ selectors\ pg.\ 118\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

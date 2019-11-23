@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ProgrammingEx7_35
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=lowerBound\ upperBound
+comment2.target=int\ intRandom(int,\ int)
+numComments=3

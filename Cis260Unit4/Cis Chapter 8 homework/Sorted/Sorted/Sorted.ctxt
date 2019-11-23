@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Sorted
+comment0.text=This\ program\ take\ an\ array\ of\ nubers\ from\ the\ user\ and\ checks\ if\r\n\ the\ list\ is\ sorted\ already\ or\ not\r\n\ Programming\ exercise\ 7.19\ sorted?\r\n\ Thomas\ J.\ Short\r\n\ 11/13/2019\r\n\ CIS\ 260-01\r\n\ p.g.\ 282\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=list
+comment2.target=boolean\ isSorted(int[])
+numComments=3

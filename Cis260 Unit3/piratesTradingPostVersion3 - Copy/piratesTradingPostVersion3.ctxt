@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=piratesTradingPostVersion3
+comment0.text=\r\n\ Pirate\ Trading\ Post\ Version\ 3\r\n\ In\ this\ version\ we\ provide\ the\ pirates\ with\ an\ item\ list\ \r\n\ Ask\ them\ to\ choose\ items,\ print\ them\ a\ receipt\ ask\ them\ how\r\n\ many\ doubloons\ they\ and\ convert\ doubllonto\ bits\ a\ calculater\r\n\ their\ change\r\n\ @author\ (Thomas\ J.\ Short)\r\n\ @version\ (version\ 3)\r\n\ Cis\ 260-01\r\n\ 10/20/2019\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=FeetToMeters
+comment0.text=\ Convert\ feet\ to\ meters\r\n\ Thomas\ J.\ Short\r\n\ Cis\ 260-01\r\n\ 09/09/2019\r\n\ pg\ 69\ chapter\ 2\ java\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
